@@ -37,11 +37,11 @@
     ?>
     
 <!-- This Prints out values passed to the action page using method="post" -->
-<img src="<?php echo $destination; ?>" class="dashboard-profile-img rounded-circle" style="width: 45%; height: 45%" />
+<img src="<?php echo $destination; ?>" class="dashboard-profile-img rounded-circle" style="width: 40%; height: 40%" />
 <div class="card" style="width: 18rem;">
         <div class="card-body">
             <h5 class="card-title"><?php echo $_POST['firstname'].' '.$_POST['lastname']; ?></h5>
-            <h6 class="card-subtitle mb-2 text-muted"><?php echo $tof['tof']; ?></h6>
+            <h6 class="card-subtitle mb-2 text-muted"><?php echo $tofName['name']; ?></h6>
             <p class="card-text">
                 Sex: <?php echo $_POST['sex']; ?></p>
                 <p class="card-text">

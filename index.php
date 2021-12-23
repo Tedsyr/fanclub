@@ -23,6 +23,10 @@
             <input class="form-check-input" type="radio" name="sex" value="male" id="male">
             <label class="form-check-label" for="male"> Male</label>
         </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="sex" value="female" id="female">
+            <label class="form-check-label" for="female"> Female</label>
+        </div>
         <div class="mb-3">
             <label for="dob" class="form-label">Date Of Birth</label>
             <input type="text" class="form-control" id="dob" name="dob">
