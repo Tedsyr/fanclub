@@ -1,18 +1,18 @@
 <?php 
-   //$host = '127.0.0.1';
-    //$db = 'fanclub_db';
-   //$user = 'root';
-   // $pass = '';
-   //$charset = 'utf8mb4';
+   $host = '127.0.0.1';
+   $db = 'fanclub_db';
+   $user = 'root';
+    $pass = '';
+   $charset = 'utf8mb4';
 
-
+/*
     $host = 'bl9yovwrxq4r0tx52rca-mysql.services.clever-cloud.com';
     $db = 'bl9yovwrxq4r0tx52rca';
     $user = 'uit2ipj3ihijcpjq';
    $pass = 'nILF8jlauUQ6UCeZyYwy';
     $charset = 'utf8mb4';
 
-
+*/
 
     $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
 

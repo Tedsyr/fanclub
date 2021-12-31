@@ -9,10 +9,11 @@
 
         }
         // function to insert a new record into the fan club database
-        public function insertFans($fname, $lname, $sex, $yard,$dob, $email, $contact, $tof){
+        public function insertFans($fname, $lname, $sex, $yard,$dob, $email, $contact, $tof, $avatar){
             try {
                 //define sql statement to be executed
-                $sql = "INSERT INTO fan (firstname,lastname,sex,yard,dateofbirth,emailaddress,contactnumber,tof_id) VALUES (:fname, :lname, :sex, :yard, :doa, :email, :contact, :tof)";
+                $sql = "INSERT INTO fan (firstname,lastname,sex,yard,dateofbirth,emailaddress,contactnumber,tof_id, imgpath)
+                 VALUES (:fname, :lname, :sex, :yard, :doa, :email, :contact, :tof :avatar)";
                 //prepare the sql statement for execution
                 $stmt = $this->db->prepare($sql);
                 //bind all placeholders to the actual values
@@ -24,6 +25,8 @@
                 $stmt->bindparam(':email',$email);
                 $stmt->bindparam(':contact',$contact);
                 $stmt->bindparam(':tof',$tof);
+                $stmt->bindparam(':imgpath',$avatar);
+
                 //execute statement
                 $stmt->execute();
                 return  true;
